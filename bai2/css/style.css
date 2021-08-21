@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	font-family: Tahoma;
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}    
+.container {
+    margin: 0px auto;
+    max-width: 1240px;
+}
+header {
+    width: 100%;
+    height: 65px;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+header .logo {
+    width: 25%;    
+}
+header .logo a {
+    color: #3bb978;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header .menu {
+    width: 60%;
+}
+header .menu ul {
+    display: flex;
+}
+header .menu ul li a {
+    color: #414246;
+    padding: 0px 20px 0px 30px;
+    text-transform: uppercase;
+}
+header .menu ul li a:hover {
+    color: #3bb978;
+}
+header .cash {
+    display: flex;
+}
+header .cash a {
+    display: block;
+    width: 30px;
+    margin-right: 12px;
+    position: relative;
+}
+header .cash a span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #32835c;
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 20px;
+}
+#banner, .banner-one {
+    width: 100%;
+    height: 560px;
+}
+.banner-one {
+    position: relative;
+}
+.banner-one h2 {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: #333333;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.banner-one h2 small {
+    display: block;
+    color: #3fbd7b;
+}
+.banner-one img {
+    max-width: 100%;
+    width: 100%;
+}
+#product-list {
+    width: 100%;
+    margin-top: 60px;
+    display: block;
+}
+ul.product-list-one {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.product-list-one li {
+    width: 20%;
+    position: relative;
+    margin-bottom: 45px;
+}
+ul.product-list-one li a {
+    color: #343434;
+    font-size: 15px;
+}
+ul.product-list-one li p {
+    color: #669e88;
+    padding-top: 15px;
+}
+ul.product-list-one li img {
+    width: 220px;
+}
+ul.product-list-one li.list {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+ul.product-list-one li.list h2 {
+   color: #373737;
+   text-transform: uppercase;
+}
+ul.product-list-one li.list small {
+    color: #6e9d85;
+   font-style: italic;
+   padding-top: 5px;
+}
+ul.product-list-one li.list p {
+   color: #333;
+   max-width: 200px;
+}
+ul.product-list-one div.item {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 0px;
+    right: 30px;
+    display: none;
+}
+ul.product-list-one li:hover div.item {
+    display: block;
+}
+
+ul.product-list-one div.item a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #63c592 url(../images/buy.png) no-repeat;
+    margin-bottom: 2px;
+}
+ul.product-list-one div.item a:nth-child(1) {
+    background-position: 1px 5px;
+}
+ul.product-list-one div.item a:nth-child(2) {
+    background-position: 2px -45px;
+}
+ul.product-list-one div.item a:nth-child(3) {
+    background-position: 2px -95px;
+}
+#icons {
+    background: #f5f6fa;
+    margin-top:60px ;
+    padding: 50px 0px;
+}
+#icons ul {
+    display: flex;
+}
+#icons ul li {
+    text-align: center;
+    width: 25%;
+}
+#icons ul li h2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+#icons ul li small {
+    color: #9a9c9f;
+}
+#fashion {
+    background: #2e3347;
+}
+#fashion ul {
+    display: flex;
+    justify-content: space-between;
+}
+#fashion ul li {
+    width: 30%;
+    display: block;
+    padding: 40px 0px;
+    text-align: center;
+}
+#fashion ul li img {
+    width: 80%;
+}
+#fashion ul li:nth-child(2) {
+    background: #34394f;
+}
+#products h2 {
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    padding-top: 60px ;
+}
+
+#products small {
+    display: block;
+    text-align: center;
+    color: green;
+    padding:7px 0px 50px 0px;
+    font-style: italic;
+}
+#form {
+    display: flex;
+    width: 100%;
+}
+#form .form-one {
+    background: #353a4d url(../images/bgform.jpg);
+    width: 50%;
+    background-size: cover;
+    text-align: center;
+    height: 250px;
+}
+#form .form-one .text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form .form-one .text h2 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+#form .form-one .text p {
+    max-width: 400px;
+    line-height: 25px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+#form .form-one form input {
+    padding: 5px;
+    width: 300px;
+}
+#form .form-one form button {
+    color: #fff;
+    padding: 6px;
+    background: #3cb879;
+    border: none;
+} 
+#form .form-two {
+    width: 50%;
+    background: #f5f6fa;
+    height: 250px;
+}
+#form .form-two ul {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+
+}
+#form .form-two ul li a{
+    display: block;
+    background: orange;
+    width: 130px;
+    height: 135px;
+    background: url(../images/brand.png) no-repeat;
+}
+#form .form-two ul li:nth-child(2) a {
+    background-position: -230px;
+}
+#form .form-two ul li:nth-child(3) a {
+    background-position: -463px;
+}
+#form .form-two ul li:nth-child(4) a {
+    background-position: -695px;
+}
+#form .form-two ul li {
+   padding-left: 33px;
+}
+#footer {
+    width: 100%;
+    background: #000000;
+    display: flex;
+    height: 45px;
+    align-items: center;
+}
+#footer .footer-left {
+    width: 50%;
+    text-align: center;
+    font-size: 10px;
+    color: #FFF;
+}
+#footer .footer-right {
+    width: 50%;
+}
+#footer .footer-right ul {
+    display: flex;
+    max-width: 300px;
+    width: 300px;
+    margin: 0px auto;
+    align-items: center;
+}
+#footer .footer-right ul li a {
+    display: block;
+    background: url(../images/payment.png);
+    width: 50px;
+    height: 25px;
+    margin-right: 5px;
+}
+#footer .footer-right ul li:nth-child(2) a {
+    background-position: -60px;
+}
+#footer .footer-right ul li:nth-child(3) a {
+    background-position: -120px;
+}
+#footer .footer-right ul li:nth-child(4) a {
+    background-position: -180px;
+}
+#footer .footer-right ul li:nth-child(5) a {
+    background-position: -231px;
+}
+
+
+
+
+
